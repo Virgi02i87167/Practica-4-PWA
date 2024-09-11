@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de paciente</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Formulario de paciente -->
+        <form class="form-paciente">
+            <h2 class="text-center text-primary mb-4">Registro de Paciente</h2>
+            <p class="text-center text-muted">Complete los siguientes datos</p>
+
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha-nacimiento">
+            </div>
+            <div class="form-group">
+                <label for="genero">Genero</label>
+                <select name="form-control" id="genero">
+                    <option>Maculino</option>
+                    <option>Femenino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Numero de Telefono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Numero de Telefono">
+            </div>
+            <!-- Boton de enviar -->
+            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
